@@ -1419,6 +1419,15 @@ HPAD:
 	InfiltrateForSupportPower:
 		Proxy: aircraft.upgraded
 		Types: SpyInfiltrate
+	FreeActor@allies:
+		Actor: HELI
+		SpawnOffset: 1,2
+		Facing: 64
+	FreeActor@soviet:
+		Actor: HIND
+		SpawnOffset: 1,2
+		Facing: 64
+		
 
 AFLD:
 	Inherits: ^Building
@@ -1562,6 +1571,11 @@ AFLD:
 		Types: SpyInfiltrate
 	WithResupplyAnimation:
 		RequiresCondition: !build-incomplete
+	FreeActor@soviet:
+		Actor: YAK
+		SpawnOffset: 1,2
+		Facing: 64
+		
 
 AFLD.Ukraine:
 	Inherits: AFLD
